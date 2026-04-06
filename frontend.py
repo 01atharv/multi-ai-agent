@@ -121,3 +121,11 @@ if st.button("Validate My Idea", type="primary", use_container_width=True, disab
     st.markdown("</div>", unsafe_allow_html=True)
 
     st.success(" Validation complete!")
+
+    st.markdown("""
+<style>
+    #MainMenu {visibility: hidden;}
+    footer {visibility: hidden;}
+    header {visibility: hidden;}
+</style>
+""", unsafe_allow_html=True)
