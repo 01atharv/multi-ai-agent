@@ -5,8 +5,7 @@ def validator_agent(state: StartupState) -> StartupState:
     print("\n Validator Agent working...")
 
     llm = ChatGoogleGenerativeAI(\
-        model="gemini-2.5-flash",
-         max_output_tokens=500
+        model="gemini-2.5-flash"
         )
 
     prompt = f"""

@@ -7,8 +7,7 @@ def report_agent(state: StartupState) -> StartupState:
     print("\n Report Agent working...")
 
     llm = ChatGoogleGenerativeAI(
-        model="gemini-2.5-flash",
-        max_output_tokens=500
+        model="gemini-2.5-flash"
     )
     today = datetime.now().strftime("%B %d, %Y")
 

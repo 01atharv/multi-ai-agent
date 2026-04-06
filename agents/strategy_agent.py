@@ -5,8 +5,7 @@ def strategy_agent(state: StartupState) -> StartupState:
     print("\n Strategy Agent working...")
 
     llm = ChatGoogleGenerativeAI(
-        model="gemini-2.5-flash",
-        max_output_tokens=500
+        model="gemini-2.5-flash"
     )
 
     prompt = f"""
