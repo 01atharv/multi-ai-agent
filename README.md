@@ -1,8 +1,8 @@
-# 🚀 Startup Idea Validator — Multi-Agent System
+#  Startup Idea Validator — Multi-Agent System
 
 A production-ready Multi-Agent system built with **LangGraph** and **Gemini API** that validates startup ideas by delegating tasks across specialized AI agents.
 
-## 🤖 Agent Architecture
+## Agent Architecture
 
 ```
 User Input → Orchestrator → Research Agent
@@ -13,13 +13,13 @@ User Input → Orchestrator → Research Agent
 
 Each agent specializes in one task and passes its output to the next agent via shared state.
 
-## 🛠️ Tech Stack
-- Python 3.10+
+## Tech Stack
+- Python 
 - LangGraph (Multi-Agent Orchestration)
-- Gemini 1.5 Flash (LLM)
+- Gemini 2.5 Flash (LLM)
 - LangChain Google GenAI
 
-## ⚙️ Setup
+##  Setup
 
 1. Clone the repo
 2. Install dependencies:
@@ -37,7 +37,7 @@ GEMINI_API_KEY=your_key_here
 python main.py
 ```
 
-## 📋 Output
+##  Output
 The system generates a complete **Startup Validation Report** including:
 - Market Research
 - Strengths & Weaknesses
