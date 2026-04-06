@@ -27,10 +27,10 @@ def research_agent(state: StartupState) -> StartupState:
 
     response = client.models.generate_content(
                 model="gemini-2.5-flash",
-                max_output_tokens=500,
                 contents=prompt,
                 config=types.GenerateContentConfig(
-                    tools=[types.Tool(google_search=types.GoogleSearch())]
+                    tools=[types.Tool(google_search=types.GoogleSearch())],
+                    max_output_tokens=600
                 )
             )
 
