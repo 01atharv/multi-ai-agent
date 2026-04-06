@@ -4,8 +4,10 @@ from graph.state import StartupState
 def strategy_agent(state: StartupState) -> StartupState:
     print("\n Strategy Agent working...")
 
-    llm = ChatGoogleGenerativeAI(model="gemini-2.5-flash")
-    
+    llm = ChatGoogleGenerativeAI(
+        model="gemini-2.5-flash",
+        max_output_tokens=500,
+    )
 
     prompt = f"""
     You are a Business Strategy Expert.

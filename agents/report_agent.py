@@ -6,7 +6,10 @@ from datetime import datetime
 def report_agent(state: StartupState) -> StartupState:
     print("\n Report Agent working...")
 
-    llm = ChatGoogleGenerativeAI(model="gemini-2.5-flash")
+    llm = ChatGoogleGenerativeAI(
+        model="gemini-2.5-flash",
+        max_output_tokens=500,
+    )
     today = datetime.now().strftime("%B %d, %Y")
 
     prompt = f"""
